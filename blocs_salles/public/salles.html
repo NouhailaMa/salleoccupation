@@ -1,0 +1,113 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salles</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="dashbord/plugins/images/web.png">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link href="css/menu.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li class="logo"><img alt="" src="assets/scanlogo.png"></li>
+      <h3 style="color: white; text-align: center; font-family: 'Courier New', Courier, monospace; 
+      font-size: 22px;">Salle Occupation</h3>
+      <hr style="color: white;">
+      <li>
+        <a href="dashboard.html"><i class="fa fa-picture-o"></i> Dashboard </a>
+      </li>
+      <li>
+        <a href="planning.html"><i class="fas fa-calendar-alt"></i> Planning</a>
+      </li>
+      <li>
+        <a href="index.html"><i class="fa fa-home"></i> Blocs </a>
+      </li>
+      <li>
+        <a href="salles.html"><i class="fa fa-book"></i> Salles </a>
+      </li>
+      <li>
+        <a href="occupations.html"><i class="fa fa-users"></i> Occupations</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="wrapper" style="margin-top: 1%;">
+    <div class="section">
+      <div class="box-area">
+
+        <!--<form style="width: 100%;margin: auto;margin-left: 5%;" class="salle-form">
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nom Salle</label>
+            <input type="text" class="nom-salle form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Type Salle</label>
+            <input type="text" class="type-salle  form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nom Bloc</label>
+            <select class="form-select" aria-label="Default select example">
+            </select>
+          </div>
+          <button type="submit" value="Ajouter une salle" class="btn btn-primary">Ajouter la salle</button>
+          
+        </form>-->
+
+        <div class="form-style-5">
+          <form class="salle-form">
+            <fieldset>
+              <legend><span class="number">*</span> Ajouter une salle </legend>
+              <input type="text" class="nom-salle form-control" placeholder="Nom Salle">
+              <input type="text" class="type-salle  form-control" placeholder="Type Salle">
+              <select class="form-select" aria-label="Default select example">
+              </select>
+            </fieldset>
+
+            <button type="submit" value="Ajouter une salle" class="btn btn-primary">Ajouter la salle</button>
+
+          </form>
+        </div>
+
+
+        <p class="loading-text">Loading...</p>
+        <table style="width: 1000px;margin: auto" class="table table-bordered">
+          <thead style="text-align: center; background-color:#262626; color: white;">
+            <tr>
+              <th scope="col">Nom Salle</th>
+              <th scope="col">Type Salle</th>
+              <th scope="col">Nom du bloc</th>
+              <th scope="col">QR Code</th>
+              <th scope="col">Opérations</th>
+              <!--<th scope="col">Modifier</th>
+              <th scope="col">Supprimer</th>-->
+            </tr>
+          </thead>
+          <tbody class="tasks">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="./salles.js"></script>
+</body>
+
+</html>
